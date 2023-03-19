@@ -1,13 +1,26 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react';
+import AOS from 'aos'
 
-import './App.css'
+import ScrollTracker from './ScrollTracker';
+
+import 'aos/dist/aos.css'
+import './App.css';
 
 function App() {
-  
 
+  const climber = useRef();  
+  const scrollTracker = useRef()
+
+
+useEffect(()=> {
+  console.log(climber)
+  console.log(scrollTracker)
+  AOS.init()
+}, [])
   return (
     <div className="app">
-      <div className='rappelBox'></div>
+      <div ref={climber} className='rappelBox' data-aos='slide-right'  ></div>
+      
     <div className='initialLoad'>
 
     <div className='navBar'>
@@ -18,7 +31,7 @@ function App() {
       <div className='navElement'>Programs</div>
       <div className='navElement'>Sign In</div>
     </div>
-
+    <ScrollTracker/>
     <div className='container'>
 
      <div className='boxOne'></div>
@@ -35,7 +48,7 @@ function App() {
    <div className='boxTwo' style={{  marginLeft: '5%', marginTop: '6%'}}>Cheer</div>
     </div>
     </div>
-  )
-}
+  );
+};
 
 export default App
