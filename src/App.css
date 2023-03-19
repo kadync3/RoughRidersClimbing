@@ -1,0 +1,91 @@
+.initialLoad{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+ 
+}
+.navBar{
+background-color: aliceblue;
+
+ margin-left: 1px; 
+ margin-right: 19px; 
+ display: flex;
+ justify-content: space-evenly;
+ 
+
+ width: 98.5vw;
+ height: 35px;
+ border-style: solid;
+
+ position: fixed;
+ 
+}
+.navElement{
+  border-style: solid ;
+ padding-left: 5px;
+ padding-right: 5px;
+  margin: 5px
+}
+
+.container{
+display: flex;
+justify-content: space-evenly;
+
+position: absolute;
+bottom: 10%;
+left: 60px;
+
+border-style: solid;
+width: 50vw;
+height: min-content;
+padding: 10px;
+}
+
+.boxOne{
+  border-style: solid;
+  border-color: black;
+  width: 20%;
+  height: 150px;
+  margin: 5px;
+
+  
+}
+.boxTwo{
+  
+  border-style: solid;
+  border-color: black;
+  width: 40%;
+  height: 150px;
+  margin: 5px;
+
+  
+}
+.rappelContainer{
+  display: flex;
+flex-direction: column;
+position: relative;
+
+}
+
+.rappelBox {
+  position: fixed;
+  bottom: 15%;
+  left: 60%;
+
+  width: 80px;
+  height: 80px;
+
+  border-style: solid;
+}
+
+@media screen and (max-width: 1200px) {
+  .boxOne{
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .boxOne{
+    width: 90%;
+  }
+}
