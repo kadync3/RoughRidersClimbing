@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import AOS from 'aos'
-import '/images/ClimbingPhoto1.jpg'
-import '/images/climberDoodle.png'
+import climbingPhoto from '/images/ClimbingPhoto1.jpg'
+
 import ScrollTracker from './ScrollTracker';
 
 import 'aos/dist/aos.css'
@@ -22,10 +22,10 @@ useEffect(()=> {
     <div className='app'>
       {/* <div ref={climber} className='rappelBox' data-aos='slide-right'  ></div> */}
       
-    <div className='initialLoad'  >
-
+    <div className='initialLoad' style={{backgroundImage: "/images/climbingPhoto1.jpg"}} >
+    <img src="/images/climbingPhoto1.jpg" style={{backgroundPosition: '-190px -190px'}}/>
     <div className='navBar'>
-      <img src='https://fvmstatic.s3.amazonaws.com/maps/m/ICON-NPS-00-0006.png'></img>
+      <img src='/images/logoClimber.png'></img>
       <div className='navElement'>Home</div>
       <div className='navElement'>Memberships</div>
       <div className='navElement'>Visit Us</div>
@@ -35,14 +35,14 @@ useEffect(()=> {
     <ScrollTracker/>
     <div className='container'>
 
-     <div className='boxOne'></div>
-     <div className='boxOne'></div>
-     <div className='boxOne'></div>
+     <div className='boxOne'><img src=''></img> About Us</div>
+     <div className='boxOne'><img src=''></img> MemberShips</div>
+     <div className='boxOne'><img src=''></img> Classes</div>
     </div>
 
     </div>
-    <div className='rappelContainer'>
-    <img ref={climber} src='' className='rappelBox' data-aos='slide-right'
+    <div className='rappelContainer' >
+    <img ref={climber} src='/images/climberDoodle.png' className='rappelBox' data-aos='slide-right'
       ></img>
 
    <div className='boxTwo' style={{  marginLeft: '5%', marginTop: '5%'}}> Bouldering</div>

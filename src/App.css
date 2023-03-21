@@ -6,7 +6,7 @@
  
 }
 .navBar{
-background-color: aliceblue;
+  background-image: linear-gradient(to right,#F56217 ,#0B486B, rgba(255,0,0,0));
 
  margin-left: .1px; 
  margin-right: 19px; 
@@ -22,23 +22,32 @@ background-color: aliceblue;
  z-index: 1;
 }
 .navElement{
-  border-style: solid ;
+  /* background-image: linear-gradient(to right,#F56217,#2a5298 ); */
+
+  /* border-style: solid  ; */
  padding-left: 5px;
  padding-right: 5px;
-  margin: 5px
+  margin: 5px;
+  color: #eef2f3;
+}
+.navElement:hover{
+  background-image: linear-gradient(to right,#F56217,#2a5298 );
+
 }
 .progressMainWrapper{
-  height: 1rem;
+  height: .5rem;
   width: 100%;
-  background-color: black;
+  background-image: linear-gradient(to bottom right,#E6DADA, #274046);  
+
 
  position: fixed;
- bottom: 92%;
+ bottom: 93.1%;
  z-index: 1;
 }
 .progressMainStyle {
-  height: 1rem;
-  background-color: orange;
+  height: .5rem;
+  background-image: linear-gradient(to right,#0B486B,#F56217 );
+
   
 }
 .container{
@@ -53,6 +62,8 @@ border-style: solid;
 width: 50vw;
 height: min-content;
 padding: 10px;
+background-image: linear-gradient(to bottom right,#E6DADA, #274046);  
+
 }
 
 .boxOne{
@@ -72,12 +83,13 @@ padding: 10px;
   height: 150px;
   margin: 5px;
 
-  
+  background-image: linear-gradient(to bottom right,#E6DADA, #274046);  
 }
 .rappelContainer{
   display: flex;
 flex-direction: column;
 position: relative;
+background-image: linear-gradient(to bottom right,rgba(255,0,0,0) ,#0B486B, #F56217 );
 
 }
 
@@ -90,6 +102,9 @@ position: relative;
   height: 80px;
 
   border-style: solid;
+
+ 
+
 }
 
 @media screen and (max-width: 1200px) {
