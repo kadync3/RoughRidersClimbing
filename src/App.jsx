@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import AOS from 'aos'
-import climbingPhoto from '/images/ClimbingPhoto1.jpg'
 
-import ScrollTracker from './ScrollTracker';
+
+import ScrollTracker from './components/ScrollTracker';
+import RappelDude from './components/RappelDude';
 
 import 'aos/dist/aos.css'
 import './App.css';
@@ -20,7 +21,7 @@ useEffect(()=> {
 }, [])
   return (
     <div className='app'>
-      {/* <div ref={climber} className='rappelBox' data-aos='slide-right'  ></div> */}
+ 
       
     <div className='initialLoad' style={{backgroundImage: "/images/climbingPhoto1.jpg"}} >
     <img src="/images/climbingPhoto1.jpg" style={{backgroundPosition: '-190px -190px'}}/>
@@ -32,7 +33,7 @@ useEffect(()=> {
       <div className='navElement'>Programs</div>
       <div className='navElement'>Sign In</div>
     </div>
-    <ScrollTracker/>
+    <ScrollTracker />
     <div className='container'>
 
      <div className='boxOne'><img src=''></img> About Us</div>
@@ -42,9 +43,8 @@ useEffect(()=> {
 
     </div>
     <div className='rappelContainer' >
-    <img ref={climber} src='/images/climberDoodle.png' className='rappelBox' data-aos='slide-right'
-      ></img>
-
+ 
+    <RappelDude ref={climber}/>
    <div className='boxTwo' style={{  marginLeft: '5%', marginTop: '5%'}}> Bouldering</div>
    <div className='boxTwo' style={{ alignSelf:'flex-end', marginRight: '40%', marginTop: '5%'}} >Rope Climbing</div>
    <div className='boxTwo' style={{  marginLeft: '5%',  marginTop: '3%'}}>Slacklineing</div>

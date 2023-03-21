@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+import '../App.css';
 
 function ScrollTracker(){
 const [scrollTop, setScrollTop] = useState(0);
@@ -23,5 +23,6 @@ const onScroll = ()=>{
     </div>
   )
 }
+
 
 export default ScrollTracker;

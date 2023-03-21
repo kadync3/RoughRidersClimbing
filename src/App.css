@@ -5,6 +5,7 @@
   position: relative;
  
 }
+/* ===============================Nav Bar=============================================== */
 .navBar{
   background-image: linear-gradient(to right,#F56217 ,#0B486B, rgba(255,0,0,0));
 
@@ -34,31 +35,36 @@
   background-image: linear-gradient(to right,#F56217,#2a5298 );
 
 }
+/* ========================Scroll Tracker=============================================== */
 .progressMainWrapper{
   height: .5rem;
   width: 100%;
   background-image: linear-gradient(to bottom right,#E6DADA, #274046);  
-
-
- position: fixed;
- bottom: 93.1%;
- z-index: 1;
+  
+  
+  position: fixed;
+  bottom: 93.1%;
+  z-index: 1;
 }
 .progressMainStyle {
   height: .5rem;
   background-image: linear-gradient(to right,#0B486B,#F56217 );
-
+  
   
 }
+
+/* =============================== 3 box element ======================================== */
+
+
 .container{
-display: flex;
-justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 
-position: absolute;
-bottom: 10%;
-left: 60px;
-
-border-style: solid;
+  position: absolute;
+  bottom: 10%;
+  left: 60px;
+  
+  border-style: solid;
 width: 50vw;
 height: min-content;
 padding: 10px;
@@ -72,9 +78,10 @@ background-image: linear-gradient(to bottom right,#E6DADA, #274046);
   width: 20%;
   height: 150px;
   margin: 5px;
-
+  
   
 }
+/* =============================== Bottom ======================================== */
 .boxTwo{
   
   border-style: solid;
@@ -82,29 +89,28 @@ background-image: linear-gradient(to bottom right,#E6DADA, #274046);
   width: 40%;
   height: 150px;
   margin: 5px;
-
+  
   background-image: linear-gradient(to bottom right,#E6DADA, #274046);  
 }
 .rappelContainer{
   display: flex;
-flex-direction: column;
-position: relative;
-background-image: linear-gradient(to bottom right,rgba(255,0,0,0) ,#0B486B, #F56217 );
-
+  flex-direction: column;
+  position: relative;
+  background-image: linear-gradient(to bottom right,rgba(255,0,0,0) ,#0B486B, #F56217 );
+  
 }
 
-.rappelBox {
-  position: fixed;
-  bottom: 15%;
-  left: 60%;
+/* =============================== Climber ======================================== */
+.image-container {
+width: 640px;
+height: 480px;
+float: left;
 
-  width: 80px;
-  height: 80px;
-
-  border-style: solid;
-
- 
-
+}
+.image-preview {
+  width:200px;
+  height: 200px;
+  float: left;
 }
 
 @media screen and (max-width: 1200px) {
