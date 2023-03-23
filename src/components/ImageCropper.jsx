@@ -3,8 +3,11 @@ import Cropper from 'cropperjs';
 import 'cropperjs/dist/cropper.min.css';
 
 import '../App.css';
+ 
+// this component did not do the job I though it would but it could be usefull in a profile picture editor
 
-class RappelDude extends React.Component{ 
+
+class ImageCropper extends React.Component{ 
   constructor(){ 
     super();
     this.state= {
@@ -39,4 +42,4 @@ class RappelDude extends React.Component{
   }
 }
 
-export default RappelDude;
+export default ImageCropper;

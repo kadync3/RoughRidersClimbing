@@ -79,6 +79,10 @@ background-image: linear-gradient(to bottom right,#E6DADA, #274046);
   height: 150px;
   margin: 5px;
   
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   
 }
 /* =============================== Bottom ======================================== */
@@ -86,9 +90,10 @@ background-image: linear-gradient(to bottom right,#E6DADA, #274046);
   
   border-style: solid;
   border-color: black;
-  width: 40%;
-  height: 150px;
+  width: 45%;
+  height: auto;
   margin: 5px;
+  padding: 10px;
   
   background-image: linear-gradient(to bottom right,#E6DADA, #274046);  
 }
@@ -101,15 +106,21 @@ background-image: linear-gradient(to bottom right,#E6DADA, #274046);
 }
 
 /* =============================== Climber ======================================== */
+.sprite {
+  height: auto;
+  width: 100%;
+ object-fit: cover;
+ object-position: 0 , 0;
+}
 .image-container {
 width: 640px;
 height: 480px;
 float: left;
 
 }
-.image-preview {
-  width:200px;
-  height: 200px;
+.spriteContainer {
+  width:50%;
+  height: auto  ;
   float: left;
 }
 
