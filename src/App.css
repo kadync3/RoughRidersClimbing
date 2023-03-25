@@ -5,6 +5,7 @@
   position: relative;
  
 }
+/* ===============================Nav Bar=============================================== */
 .navBar{
   background-image: linear-gradient(to right,#F56217 ,#0B486B, rgba(255,0,0,0));
 
@@ -19,6 +20,7 @@
  border-style: solid;
 
  position: fixed;
+ top: 0%;
  z-index: 1;
 }
 .navElement{
@@ -34,31 +36,36 @@
   background-image: linear-gradient(to right,#F56217,#2a5298 );
 
 }
+/* ========================Scroll Tracker=============================================== */
 .progressMainWrapper{
   height: .5rem;
   width: 100%;
   background-image: linear-gradient(to bottom right,#E6DADA, #274046);  
-
-
- position: fixed;
- bottom: 93.1%;
- z-index: 1;
+  
+  
+  position: fixed;
+  bottom: 93.1%;
+  z-index: 1;
 }
 .progressMainStyle {
   height: .5rem;
   background-image: linear-gradient(to right,#0B486B,#F56217 );
-
+  
   
 }
+
+/* =============================== 3 box element ======================================== */
+
+
 .container{
-display: flex;
-justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 
-position: absolute;
-bottom: 10%;
-left: 60px;
-
-border-style: solid;
+  position: absolute;
+  bottom: 10%;
+  left: 60px;
+  
+  border-style: solid;
 width: 50vw;
 height: min-content;
 padding: 10px;
@@ -72,39 +79,64 @@ background-image: linear-gradient(to bottom right,#E6DADA, #274046);
   width: 20%;
   height: 150px;
   margin: 5px;
-
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   
 }
+/* =============================== Bottom ======================================== */
 .boxTwo{
   
   border-style: solid;
   border-color: black;
-  width: 40%;
-  height: 150px;
+  width: 45%;
+  height: auto;
   margin: 5px;
-
+  padding: 10px;
+  
   background-image: linear-gradient(to bottom right,#E6DADA, #274046);  
 }
 .rappelContainer{
   display: flex;
-flex-direction: column;
-position: relative;
-background-image: linear-gradient(to bottom right,rgba(255,0,0,0) ,#0B486B, #F56217 );
-
+  flex-direction: column;
+  position: relative;
+  background-image: linear-gradient(to bottom right,rgba(255,0,0,0) ,#0B486B, #F56217 );
+  
 }
 
-.rappelBox {
+/* =============================== Climber ======================================== */
+.sprite {
+height: 150px;
+width: auto;
+  
+animation: moveSpritSheet 1s steps(5) infinite;
+}
+.spriteContainer {
+ height: 160px;
+ width: 100px;
+
+ overflow: hidden;
+ background-color: red;
   position: fixed;
-  bottom: 15%;
-  left: 60%;
+  left: 59%;
+  bottom: 10%;
+}
+.image-container {
+width: 640px;
+height: 480px;
+float: left;
 
-  width: 80px;
-  height: 80px;
-
-  border-style: solid;
-
- 
-
+}
+@keyframes moveSpritSheet {
+  from {
+    transform: translate3d(0px,0,0);
+  }
+  to {
+    transform: translate3d(-100%,0,0);
+  }
+  
 }
 
 @media screen and (max-width: 1200px) {
